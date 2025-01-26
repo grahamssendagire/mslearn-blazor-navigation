@@ -1,4 +1,4 @@
-   public class PizzaStoreContext : DbContext
+ public class PizzaStoreContext : DbContext
   {
         public PizzaStoreContext(
             DbContextOptions options) : base(options)
