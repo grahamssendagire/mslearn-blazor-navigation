@@ -5,11 +5,12 @@
 
 <div class="main">
   <h1>Blazing Pizzas</h1>
+  
   <ul class="pizza-cards">
     @if (specials != null)
     {
       @foreach (var special in specials)
-      {
+      {   
           <li @onclick="@(() => OrderState.ShowConfigurePizzaDialog(special))" style="background-image: url('@special.ImageUrl')">
           <div class="pizza-info">
           <span class="title">@special.Name</span>
